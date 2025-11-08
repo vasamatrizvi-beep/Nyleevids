@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Play Unlisted Video</title>
+    <style>
+      #videoFrame {
+        display: none;
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+        border: none;
+        margin-top: 20px;
+      }
+    </style>
+    <script>
+      function showVideo() {
+        document.getElementById("videoFrame").style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button type="button" onclick="showVideo()">Click this button!</button>
+      <iframe
+        id="videoFrame"
+        src="https://www.youtube.com/embed/Im1ruIQ-TDM"
+        title="Unlisted YouTube Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p>Comment or like so I know you watched! If comments are disabled just like or smth, or just comment on the post!</p>
+  </body>
+</html>
